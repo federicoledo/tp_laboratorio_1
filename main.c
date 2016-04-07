@@ -16,13 +16,15 @@ int main()
     {
     case 1:
         {
-            ingreso(num1);
+            printf("Ingrese el primer numero\n");
+            scanf("%f", &num1);
             flagA=1;
             break;
         }
     case 2:
         {
-            ingreso(num2);
+            printf("Ingrese el segundo numero\n");
+            scanf("%f", &num2);
             flagB=1;
             break;
         }
