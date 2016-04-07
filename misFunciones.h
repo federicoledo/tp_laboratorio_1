@@ -51,11 +51,8 @@ float division(float x, float y)
 int factorial(float x)
 {
     int fact=1;
-    int aux;
-    aux=(int)x;
     for(int i=x; i>0; i--)
     {
         fact=fact*i;
     }
-        int res= fact;
 }
