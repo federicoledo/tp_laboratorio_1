@@ -9,6 +9,10 @@ int main()
     do
     {
     printf("Elegir la opcion que desea\n\n1.Ingresar el primer numero\n2.Ingresar el segundo numero\n3.Suma\n4.Resta\n5.Producto\n6.Cociente\n7.Factorial\n8.Todas las operaciones\n9.Salir\n");
+    if(flagA==0)//Inicializo el valor en A en 0 mientras no se ingrese ningun valor
+        num1=0;
+    if(flagB==0)//Inicializo el valor de B en 0 mientras no se ingrese ningun valor
+        num2=0;
     printf("\nHasta el momento, los numeros ingresados son: \nA:%f\nB:%f\n", num1, num2);
     scanf("%d", &opcion);
     system("cls");
@@ -89,8 +93,16 @@ int main()
                 printf("No ingreso el primer numero, verifique el ingreso\n");
             else
                 {
-                    resultado=factorial(num1);
-                    printf("\nEl factorial es %f\n", resultado);
+                    int aux=(int)num1;
+                    if((num1-aux)==0)
+                    {
+                        resultado=factorial(num1);
+                        int res2;
+                        res2=(int)resultado;//paso a entero el resultado que es flotante, para que no aparezca ,000000
+                        printf("\nEl factorial es %d\n", res2);
+                    }
+                    else
+                        printf("El numero no es entero, por lo tanto no se puede hacer el factorial");
                 }
         break;
         }
@@ -118,8 +130,16 @@ int main()
                         resultado=division(num1,num2);
                         printf("\nLa division es %f ", resultado);
                     }
-                resultado=factorial(num1);
-                printf("\nEl factorial es %f\n\n", resultado);
+                    int aux=(int)num1;
+                    if((num1-aux)==0)
+                    {
+                        resultado=factorial(num1);
+                        int res2;
+                        res2=(int)resultado;//paso a entero el resultado que es flotante, para que no aparezca ,000000
+                        printf("\nEl factorial es %d\n", res2);
+                    }
+                    else
+                        printf("El numero no es entero, por lo tanto no se puede hacer el factorial\n");
             }
         break;
         }
