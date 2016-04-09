@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1459896274 source:c:\users\federico\desktop\code block\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"misFunciones.h"
+
+1459896294 source:c:\users\federico\desktop\code block\tp1\misfunciones.c
+
+1459896242 c:\users\federico\desktop\code block\tp1\misfunciones.h
+
+1460058302 source:c:\users\federico\desktop\programacion\code block\tp1\misfunciones.c
+
+1460153829 source:c:\users\federico\desktop\programacion\code block\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"misFunciones.h"
+
+1460134813 c:\users\federico\desktop\programacion\code block\tp1\misfunciones.h
+
