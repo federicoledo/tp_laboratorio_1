@@ -159,28 +159,39 @@ void ordenarAtoZ(ePersona x[], int TAM)
 void borrarPersona(ePersona x[], int TAM)
 {
     int i, borrar;
-    printf("\nIngrese el numero de la persona que desea borrar\n");
-    for(i=0; i<TAM; i++)
-        {
-            if(x[i].estado>0)
-                {
-                    printf("%d.%s\n",i, x[i].nombre);
-                }
-        }
-    fflush(stdin);
-    scanf("%d", &borrar);
     for(i=0; i<TAM; i++)
     {
-        if(i==borrar)
+        if(x[i].estado<0)
+        {
+            printf("No hay personas cargadas\n");
+            break;
+        }
+        else
+        {
+            printf("\nIngrese el numero de la persona que desea borrar\n");
+            for(i=0; i<TAM; i++)
+                {
+                    if(x[i].estado>0)
+                        {
+                            printf("%d.%s\n",i, x[i].nombre);
+                        }
+                }
+            fflush(stdin);
+            scanf("%d", &borrar);
+            for(i=0; i<TAM; i++)
             {
-                x[i].estado=-1;
-                printf("La operacion ha ocurrido con exito\n");
-                break;
+                if(i==borrar)
+                    {
+                        x[i].estado=-1;
+                        printf("La operacion ha ocurrido con exito\n");
+                        break;
+                    }
+                if(i==TAM&&i!=borrar)
+                    {
+                        printf("Ha ocurrido un error\n");
+                    }
             }
-        if(i==TAM&&i!=borrar)
-            {
-                printf("Ha ocurrido un error\n");
-            }
+        }
     }
 }
 /** \brief Funcion que muestra el grafico de edades
