@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1464389388 source:c:\users\federico\desktop\programasaprueba\muvie\main.c
+	"funciones.h"
+
+1464388845 source:c:\users\federico\desktop\programasaprueba\muvie\funciones.c
+	"funciones.h"
+
+1464388849 c:\users\federico\desktop\programasaprueba\muvie\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+
+1464388433 c:\users\federico\desktop\programasaprueba\muvie\funciones.c
+	"funciones.h"
+
